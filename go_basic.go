@@ -1,8 +1,9 @@
 package main
 
 import (
-	"WorldProject/stringutil"
+
 	"fmt"
+	. "solomon/github.com/GoKnowledgeLearning/stringutil"
 )
 
 func main()  {
@@ -12,7 +13,7 @@ func main()  {
 	这是多行注释的写法
 	这是多行注释的写法
 	*/
-	fmt.Printf(stringutil.Reverse("Hello World"))
+	fmt.Printf(Reverse("Hello World"))
 	var a *int
 	var b []int
 	var c map[string] int
@@ -86,7 +87,7 @@ func printSlice(x []int) {
 	fmt.Printf("len=%d cap=%d slice=%v\n", len(x), cap(x), x)
 }
 
-// 在终端中运行命令为 go run go_base.go
+// 在终端中运行命令为 go run go_basic.go
 
 // 标识符 由字母、数字和下划线组成
 
